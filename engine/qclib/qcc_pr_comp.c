@@ -14,6 +14,9 @@
 #ifdef _MSC_VER
 #define longlong __int64
 #define LL(x) x##i64
+#ifndef strcasecmp
+#define strcasecmp _stricmp
+#endif
 #else
 #define longlong long long
 #define LL(x) x##ll
